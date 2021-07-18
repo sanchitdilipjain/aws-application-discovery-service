@@ -10,7 +10,7 @@
 
 - Data captured is transferred securely using Transport Layer Security (TLS) encryption. Agents are configured to upgrade automatically when new versions become available. You can change this configuration setting if desired.
 
-  <img src="images/image1.png" class="inline" width="700" height="200"/>
+  <p align="center"><img src="images/image1.png" class="inline" width="500" height="150"/></p>
 
 **Tutorial**
 
