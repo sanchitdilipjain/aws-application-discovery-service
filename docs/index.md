@@ -1,37 +1,69 @@
-## Welcome to GitHub Pages
+## AWS Application Discovery Service
 
-You can use the [editor on GitHub](https://github.com/sanchitdilipjain/aws-application-discovery-service/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+**Introduction**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- AWS Discovery Agent is an AWS software that is deployed in any targeted servers like physical on-premises servers, Amazon EC2 instances, and virtual machines for discovery and migration. It captures information like system configuration, system performance, running processes, and details of the network connections between systems.
 
-### Markdown
+- This agent required root privileges to collect the information. When you start the Discovery Agent, it registers with the Application Discovery Service endpoint, arsenal.aws.com, and pings the service at 15-minute intervals for configuration information
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- To initiate the agent to capture data collection we need to send a command. All the information captured helps to visualize all the IT assets and their dependencies, calculate the total cost of ownership, and also the migration plan.
 
-```markdown
-Syntax highlighted code block
+- Data captured is transferred securely using Transport Layer Security (TLS) encryption. Agents are configured to upgrade automatically when new versions become available. You can change this configuration setting if desired.
 
-# Header 1
-## Header 2
-### Header 3
+  <img src="images/image1.png" class="inline" width="700" height="200"/>
 
-- Bulleted
-- List
+**Tutorial**
 
-1. Numbered
-2. List
+- On this section we will start utilizing AWS Application discovery services, by:
 
-**Bold** and _Italic_ and `Code` text
+  - Create AWS Credentials  
+  
+  - Installing ADS agents in the servers
+  
+  - Starting ADS data collection
+  
+  - Browsing the discovered data
+  
+  - Viewing Network Connections
+  
+  - Explore EC2 instance recommendations
+  
+  - Enabling ADS and Athena integration
 
-[Link](url) and ![Image](src)
-```
+- Create AWS Credentials 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+  1. Traverse to the <a href="https://console.aws.amazon.com/iamv2/">Amazon IAM console</a>  
+  
+  2. In the IAM screen, click on Users and Select Add users button on the right side of the screen
+  
+      <p align="center"><img src="images/image2.png" class="inline" width="700" height="125"/></p>
+  
+  3. Provide Username ADSAgent and select Programmatic access under Access type
+      
+      <p align="center"><img src="images/image3.png" class="inline" width="700" height="400"/></p>
+  
+  4. Click Next to add required permission. Under permission screen, choose Attach existing policies directly and select AdministratorAccess under Poilcy Name
+  
+      <p align="center"><img src="images/image4.png" class="inline" width="700" height="400"/></p>
+  
+  5. Click Next, and provide required tags
+  
+  6. Click Next, and review all the provided details. Finally click Create user
+  
+      <p align="center"><img src="images/image5.png" class="inline" width="700" height="400"/></p>
+  
+  7. Now the user is created, download the csv file which contains Access & Secret Key required while deployed AWS Discovery Agent
+  
+      <p align="center"><img src="images/image6.png" class="inline" width="700" height="350"/></p>
 
-### Jekyll Themes
+- Installing ADS agents in the servers
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sanchitdilipjain/aws-application-discovery-service/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- Starting ADS data collection
 
-### Support or Contact
+- Browsing the discovered data
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- Viewing Network Connections
+
+- Explore EC2 instance recommendations
+
+- Enabling ADS and Athena integration
