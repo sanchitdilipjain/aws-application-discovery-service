@@ -122,6 +122,48 @@
 
   1. Traverse to the <a href="https://us-west-2.console.aws.amazon.com/migrationhub/">AWS Migration Hub</a>
   
-  2. Under Migration Hub navigation pane, click Assess under EC2 Instance Recommendations
+  2. Under Migration Hub navigation pane, click Assess under EC2 Instance Recommendations. Click Get Started
+  
+  3. On the Export EC2 instance recommendations page under Sizing preferences choose Average utilization from the drop down for CPU/RAM sizing
+  
+  4. Choose Region as US West (Oregon) from the drop down menu under Instance type preferences. Next for Tenancy choose Shared Instances, for Pricing Model choose On-Demand
+  
+  <p align="center"><img src="images/image14.png" class="inline" width="700" height="300"/></p> 
+  
+  5. Next, click Export recommendations at bottom of the page that will initiate generating the recommendations. Once the process is complete, a compressed archive (ZIP) file will be auto-downloaded, containing a comma-separated values (CSV) file with the recommendations.
+   
+   <p align="center"><img src="images/image15.png" class="inline" width="700" height="125"/></p> 
 
 - Enabling ADS and Athena integration
+  
+  1. Traverse to the <a href="https://us-west-2.console.aws.amazon.com/migrationhub/">AWS Migration Hub</a>
+  
+  2. Under Migration Hub navigation pane, click Server under Discover section
+  
+     <p align="center"><img src="images/image16.png" class="inline" width="700" height="300"/></p> 
+  
+  3. Now we will on the Amazon Athena console with an ADS database application_discovery_service_database and a couple of tables listed below
+
+      - os_info_agent
+
+      - network_interface_agent
+
+      - sys_performance_agent
+
+      - processes_agent
+
+      - inbound_connection_agent
+
+      - outbound_connection_agent
+
+      - id_mapping_agent
+    
+        <p align="center"><img src="images/image17.png" class="inline" width="700" height="300"/></p> 
+   
+   4. We can run Athena queries across these table ranging from simpler once like listing IP address of all the server to a complex once
+     
+      - Example
+     
+         <p align="center"><img src="images/image18.png" class="inline" width="700" height="300"/></p> 
+
+  
