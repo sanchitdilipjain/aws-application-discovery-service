@@ -58,7 +58,55 @@
 
 - Installing ADS agents in the servers
 
+  - Download and install the agents as per the following instructions
+  
+    - For Lunix Machine 
+  
+      ``curl -o ./aws-discovery-agent.tar.gz https://s3-us-west-2.amazonaws.com/aws-discovery-agent.<supported-aws-region>/linux/latest/aws-discovery-agent.tar.gz``
+        
+       ``tar -xzf aws-discovery-agent.tar.gz``
+        
+       ``sudo bash install -r "us-west-2" -k "<AWS key id>" -s "<AWS key secret>" ``
+       
+     - For Windows Machine  
+    
+        ``Import-Module BitsTransfer``
+
+        ``Start-BitsTransfer -Source "https://s3-us-west-2.amazonaws.com/aws-discovery-agent.<supported-aws-region>/windows/latest/AWSDiscoveryAgentInstaller.msi" -Destination "    C:\Users\Administrator\Downloads\" ``
+
+        ``msiexec.exe /i c:\Users\Administrator\Downloads\AWSDiscoveryAgentInstaller.msi REGION="<supported-aws-region>" KEY_ID="<aws key id>" KEY_SECRET="<aws key secret>" /q ``
+     
+     **Note:**
+     
+      -  Update < AWS key id > and < AWS key secret > with the information downloaded during the ADSAgent user creation step
+      
+      -  Update < supported-aws-region > with AWS region you are performing this tutorial from the list of AWS regions where AWS Application Discovery Service is available 
+      
+       <p align="center"><img src="images/image7.png" class="inline" width="700" height="400"/></p>
+      
+   -  Follow the above commands for all the different Linux and Windows instances you are planning to perform the discovery.
+
 - Starting ADS data collection
+
+  -  Traverse to the <a href="https://us-west-2.console.aws.amazon.com/migrationhub/">AWS Migration Hub</a>
+  
+  -  Under Migration Hub navigation pane, click Data Collectors under Discover section.
+  
+  -  Choose a Migration Hub home region from the drop-down list, it should be the same what we provided while running discovery agents
+  
+  -  Switch to Agents tab, to view all the servers where Discovery Agent is running. Please verify all servers are available before we proceed 
+    
+      <p align="center"><img src="images/image8.png" class="inline" width="700" height="300"/></p>
+  
+  -  Choose all the check box of the agent you want to start discovery, then Click on Start data collection
+  
+      <p align="center"><img src="images/image9.png" class="inline" width="700" height="300"/></p>
+      
+      <p align="center"><img src="images/image10.png" class="inline" width="700" height="300"/></p>
+   
+  - We can also enable Athena integration to visualize the discovery data and perform create a Quicksight dashboard if required 
+      
+      <p align="center"><img src="images/image11.png" class="inline" width="700" height="100"/></p> 
 
 - Browsing the discovered data
 
