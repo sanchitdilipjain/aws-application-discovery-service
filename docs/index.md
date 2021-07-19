@@ -1,9 +1,5 @@
 ## AWS Application Discovery Service
 
-<meta name="image" property="og:image" content="images/image1.png">
-<meta property="og:image:height" content="150">
-<meta property="og:image:width" content="300">
-
 **Introduction**
 
 - AWS Discovery Agent is an AWS software that is deployed in any targeted servers like physical on-premises servers, Amazon EC2 instances, and virtual machines for discovery and migration. It captures information like system configuration, system performance, running processes, and details of the network connections between systems.
