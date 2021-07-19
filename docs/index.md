@@ -158,12 +158,12 @@
 
       - id_mapping_agent
     
-        <p align="center"><img src="images/image17.png" class="inline" width="700" height="300"/></p> 
+        <p align="center"><img src="images/image17.png" class="inline" width="700" height="250"/></p> 
    
    4. We can run Athena queries across these table ranging from simpler once like listing IP address of all the server to a complex once
      
       - Example
      
-         <p align="center"><img src="images/image18.png" class="inline" width="700" height="300"/></p> 
+         <p align="center"><img src="images/image18.png" class="inline" width="700" height="325"/></p> 
 
   
