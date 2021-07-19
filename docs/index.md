@@ -40,13 +40,13 @@
       
       <p align="center"><img src="images/image3.png" class="inline" width="700" height="400"/></p>
   
-  4. Click Next to add required permission. Under permission screen, choose Attach existing policies directly and select AdministratorAccess under Poilcy Name
+  4. Click Next to add required permission. Under permission screen, choose Attach existing policies directly and select AdministratorAccess under Policy Name
   
       <p align="center"><img src="images/image4.png" class="inline" width="700" height="400"/></p>
   
   5. Click Next, and provide required tags
   
-  6. Click Next, and review all the provided details. Finally click Create user
+  6. Click Next, and review all the provided details. Finally, click Create user
   
       <p align="center"><img src="images/image5.png" class="inline" width="700" height="400"/></p>
   
@@ -58,7 +58,7 @@
 
   1. Download and install the agents as per the following instructions
   
-      - For Lunix Machine 
+      - For Linux Machine 
   
       ``curl -o ./aws-discovery-agent.tar.gz https://s3-us-west-2.amazonaws.com/aws-discovery-agent.<supported-aws-region>/linux/latest/aws-discovery-agent.tar.gz``
         
@@ -90,9 +90,9 @@
   
   2. Under Migration Hub navigation pane, click Data Collectors under Discover section.
   
-  3. Choose a Migration Hub home region from the drop-down list, it should be the same what we provided while running discovery agents
+  3. Choose a Migration Hub home region from the drop-down list, it should be the same as what we provided while running discovery agents
   
-  4. Switch to Agents tab, to view all the servers where Discovery Agent is running. Please verify all servers are available before we proceed 
+  4. Switch to the Agents tab, to view all the servers where Discovery Agent is running. Please verify all servers are available before we proceed 
     
       <p align="center"><img src="images/image8.png" class="inline" width="700" height="300"/></p>
   
@@ -160,7 +160,7 @@
     
         <p align="center"><img src="images/image17.png" class="inline" width="700" height="250"/></p> 
    
-   4. We can run Athena queries across these table ranging from simpler once like listing IP address of all the server to a complex once
+   4. We can run Athena queries across these tables ranging from simpler once like listing the IP address of all the servers to a complex once
      
       - Example
      
